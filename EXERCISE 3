@@ -1,0 +1,17 @@
+package exercise;
+
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Generate a random number to be guessed
+		
+		
+	    int number = (int)(Math.random() * 10);
+	    System.out.println(number);
+	 
+
+	}
+
+}

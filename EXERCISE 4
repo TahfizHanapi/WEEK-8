@@ -1,0 +1,31 @@
+package exercise;
+
+import java.util.Scanner;
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		        int number = (int)(Math.random() * 11);
+		        Scanner input = new Scanner(System.in);
+		        int j , i= -1;
+		        System.out.println (" Ini adalah Sistem Meneka Number :)");
+		        while( i  != number ) {
+		            System.out.println ("Masukkan nombor antara 0 - 10" );
+		            j= input.nextInt();
+		            if ( j == number ) {
+		                System.out.println("Tahniah !! No Anda Sama");
+		            } 
+		            else if (j <= number ) {
+		                System.out.println ("Maaf !! No Anda Terlalu Rendah ");
+		            } 
+		            else {
+		                System.out.println ("Maaf !! No Anda Terlalu Tinggi ");    
+		            }    
+		        } 
+		        
+		        input.close();
+	    
+
+	}
+
+}

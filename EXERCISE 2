@@ -1,0 +1,51 @@
+package exercise;
+
+public class Exercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		 /*declare dua variable x =0, y=1. 
+         * Selagi y lebih kecil dan sama dgn 10, tambah x dgn y. 
+         * kemudian tambah y dgn 5. print x.*/
+         
+        int x=0;
+        int y=1;
+        int z =1;
+        int a=0;
+        int b=1;
+        int c =1;
+        int d=0;
+        int e=1;
+        int f =1;
+        while (y <= 20) {
+            System.out.println("y ="+y);
+            x=x+y;
+              y=y+5;
+              System.out.println("x ="+x);  
+              System.out.println("z ="+z);
+              z++;
+        }
+        do {
+            System.out.println("b ="+b);
+            a=a+b;
+              b=b+5;
+              System.out.println("a ="+a);  
+              System.out.println("c ="+c);
+              c++;
+        }while (b<=20);
+        
+        for (e=1;e<=20;)
+        {
+            System.out.println("e ="+e);
+            d=d+e;
+              e=e+5;
+              System.out.println("d ="+d);  
+              System.out.println("f ="+f);
+              f++;
+              e++;
+        }
+
+	}
+
+}

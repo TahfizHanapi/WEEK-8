@@ -1,0 +1,61 @@
+package exercise;
+
+import java.util.Scanner;
+
+public class Exercise5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	    boolean access = true;
+	        boolean levelOne = true;
+	        int counter = 0;
+	        String cardNo;
+	        String password;
+	        String name;
+	        String amount;
+	        
+	        System.out.println("Welcome to Aman Bank");
+	        
+	        Scanner input = new Scanner(System.in);
+	        
+	        System.out.print("Please insert your name : ");
+	        name = input.nextLine();
+	        
+	        do {
+	            System.out.print("Please enter your card ID : ");
+	            cardNo = input.next();
+	            System.out.print("Please enter your password : ");
+	            password = input.next();
+	            
+	                if (cardNo.equals("9999") && password.equals("999"))
+	            {
+	                System.out.println("Access Granted");
+	                System.exit(0);
+	            }
+	                else
+	                {
+	                    System.out.println("Access Failed");    
+	                }
+	                counter = counter +1;
+	                System.out.println("Right Here!!! Counter :"+counter);    
+	                
+	                
+	                
+	                if (counter >= 3) 
+	                {
+	                    access = false;
+	                    System.out.println("3 tries exceeded! You are not allowed to log in.");
+	                    System.exit(0);
+	                }
+	                
+	                
+	            }
+	        while(access==true); 
+	        
+	}
+}
+
+
+
+
